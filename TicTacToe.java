@@ -20,10 +20,12 @@ public class TicTacToe {
 
   public void printooxx() {
     for(int[] a : ooxx){
+      System.out.print("|");
       for(int b : a){
         System.out.print( b==2?"X":b==1?"O":"" );
+        System.out.print("|");
       }
-      System.out.println();
+      System.out.println("\n--------------");
     }
   }
 } 

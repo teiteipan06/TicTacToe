@@ -6,10 +6,13 @@ public class GameLauncher {
     System.out.println("******* Game Start *******");
     TicTacToe t = new TicTacToe();
     
-    System.out.print("Player-X, enter your move (row[1-3],colum[1-3]): ");
+    while (true) {
+      System.out.print("Player-"+t.who()+", enter your move (row[1-3],colum[1-3]): ");
     Scanner scanner = new Scanner(System.in);
     String input = scanner.nextLine();
     t.go(input);
     t.printooxx();
+    }
+    
   }
 }

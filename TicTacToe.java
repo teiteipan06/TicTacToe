@@ -18,7 +18,7 @@ public class TicTacToe {
     // tmp_array[0]
     ooxx[Integer.parseInt(tmp_array[0])-1][Integer.parseInt(tmp_array[1])-1] = turn;
     if(win()){
-      System.out.println(who() + "win");
+      System.out.println("Player-" + who() + " is winner");
       isgamestart = false;
     }
     turn = turn==2?1:2;
